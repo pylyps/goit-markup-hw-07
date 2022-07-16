@@ -111,7 +111,7 @@ margin-right: auto;}
 border-bottom: 1px solid var(--color-header-border);
 }
 
-.navigation-header {
+.nav-list__item {
     position: relative;
 
     text-decoration: none;
@@ -123,11 +123,11 @@ border-bottom: 1px solid var(--color-header-border);
  }
     
     
-.current { 
+.nav-list__item--current { 
     color: var(--color-button-second)
 }
 
-.current::after{
+.nav-list__item--current::after{
     content: '';
 
     position: absolute;
@@ -185,7 +185,7 @@ margin-left: 93px;
 }
 
 
-.navigation-contacts{
+.contacts__link{
     text-decoration: none;
     font-weight: 500;
     line-height: 1.14;
@@ -197,18 +197,18 @@ margin-left: 93px;
 
 
 /* Contacts */
-.contacts-list{
+.contacts{
     display: flex;
    
     margin:0;
     padding-left: 0;
     margin-left: auto;
 }
-.contacts-list .li + .li{margin-left: 50px;
+.contacts .li + .li{margin-left: 50px;
 }
 
-.navigation-header, 
-.navigation-contacts{
+.nav-list__item, 
+.contacts__link{
     display: flex;
     
     padding-top: 32px;
@@ -217,10 +217,10 @@ margin-left: 93px;
     transition: color var(--animation);
 }
 
-.navigation-header:hover,
-.navigation-header:focus,
-.navigation-contacts:hover,
-.navigation-contacts:focus,
+.nav-list__item:hover,
+.nav-list__item:focus,
+.contacts__link:hover,
+.contacts__link:focus,
 .navigation-address:hover,
 .navigation-address:focus
  {
@@ -228,19 +228,19 @@ margin-left: 93px;
     filter: drop-shadow(rgba(0, 0, 0, 0.25));
 }
 
-.contacts-icon{
+.contacts__icon{
     display: flex;
     justify-content:center;
     align-items: center;
 }
-.contacts-envelope{
+.contacts__envelope{
     width: 16px;
     height: 12px;
     margin-right: 10px;
 
     fill: currentColor;
 }
-.contacts-phone {
+.contacts__phone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
@@ -255,7 +255,7 @@ text-align: center;
 align-items: center;
 
 }
-.hero-header {
+.hero__header {
     max-width: 650px;
     margin: 0 auto;
     
@@ -268,13 +268,13 @@ align-items: center;
     color: var(--color-button-prima);
 }
 
-.grey {
+.box {
     padding: 60px 0;
     padding-top: 60px;
     background-color: var(--color-bg-hero);
 }
 
-.hero.grey{
+.hero.box{
     padding: 200px 0;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero.jpg);
